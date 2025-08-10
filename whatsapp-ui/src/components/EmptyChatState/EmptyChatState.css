@@ -1,0 +1,98 @@
+.empty-chat-container {
+    background-color: #f0f2f5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    flex: 1;
+    border-left: 1px solid #e5e7eb;
+}
+
+.empty-chat-container.desktop {
+    width: 100%;
+}
+
+.empty-chat-container.mobile {
+    width: 100%;
+}
+
+.empty-chat-content {
+    text-align: center;
+    max-width: 460px;
+    padding: 0 32px;
+}
+
+.empty-chat-icon {
+    width: 280px;
+    height: 180px;
+    margin: 0 auto 32px;
+    opacity: 0.15;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.whatsapp-icon {
+    width: 100%;
+    height: 100%;
+    color: #54656f;
+}
+
+.empty-chat-title {
+    font-size: 36px;
+    color: #41525d;
+    font-weight: 300;
+    margin-bottom: 24px;
+    letter-spacing: -0.5px;
+}
+
+.empty-chat-description {
+    color: #667781;
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 40px;
+}
+
+.empty-chat-encrypted {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    color: #8696a0;
+    background-color: #fff;
+    padding: 10px 16px;
+    border-radius: 20px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
+    margin: 0 auto;
+    width: fit-content;
+}
+
+.lock-icon {
+    width: 14px;
+    height: 14px;
+    margin-right: 6px;
+}
+
+@media (max-width: 768px) {
+    .empty-chat-content {
+        max-width: 320px;
+        padding: 0 20px;
+    }
+
+    .empty-chat-icon {
+        width: 200px;
+        height: 120px;
+        margin-bottom: 24px;
+    }
+
+    .empty-chat-title {
+        font-size: 28px;
+        margin-bottom: 16px;
+    }
+
+    .empty-chat-description {
+        font-size: 13px;
+        margin-bottom: 24px;
+    }
+}

@@ -1,0 +1,9 @@
+.status-icon {
+    width: 16px;
+    height: 16px;
+    color: #667781;
+}
+
+.status-icon-read {
+    color: #53bdeb;
+}

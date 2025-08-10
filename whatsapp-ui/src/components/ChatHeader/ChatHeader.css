@@ -1,0 +1,75 @@
+.chat-header {
+    background-color: #f0f2f5;
+    padding: 12px 0px;
+    border-bottom: 1px solid #e5e7eb;
+    display: flex;
+    align-items: center;
+}
+
+.back-button {
+    margin-right: 12px;
+    padding: 4px;
+    border-radius: 50%;
+    border: none;
+    background: none;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.back-button:hover {
+    background-color: #e5e7eb;
+}
+
+.back-icon {
+    width: 24px;
+    height: 24px;
+    color: #6b7280;
+}
+
+.contact-details {
+    flex: 1;
+}
+
+.contact-name-header {
+    font-weight: 500;
+    color: #111827;
+    margin: 0;
+    font-size: 16px;
+}
+
+.contact-status {
+    font-size: 14px;
+    color: #6b7280;
+    margin: 0;
+}
+
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.header-action-button {
+    padding: 8px;
+    border-radius: 50%;
+    border: none;
+    background: none;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.header-action-button:hover {
+    background-color: #e5e7eb;
+}
+
+.header-icon {
+    width: 20px;
+    height: 20px;
+    color: #6b7280;
+}
+
+@media (max-width: 400px) {
+    .vid {
+        display: none;
+    }
+}

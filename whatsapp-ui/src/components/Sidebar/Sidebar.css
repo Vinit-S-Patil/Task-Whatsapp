@@ -1,0 +1,260 @@
+.sidebar {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid #e5e7eb;
+    height: 100%;
+    flex-shrink: 0;
+}
+
+.sidebar-desktop {
+    width: 400px;
+    min-width: 300px;
+}
+
+.sidebar-mobile {
+    width: 100%;
+}
+
+.sidebar-header {
+    background-color: #f0f2f5;
+    padding: 10px 16px;
+    border-bottom: 1px solid #e5e7eb;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+}
+
+.sidebar-header-left {
+    display: flex;
+    align-items: center;
+}
+
+.user-avatar {
+    width: 40px;
+    height: 40px;
+    background-color: #d9fdd3;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+}
+
+.sidebar-title {
+    margin-left: 16px;
+    font-weight: 400;
+    color: #111827;
+    font-size: 19px;
+}
+
+.sidebar-header-right {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.header-button {
+    padding: 8px;
+    border-radius: 50%;
+    border: none;
+    background: none;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    color: #54656f;
+}
+
+.header-button:hover {
+    background-color: #f0f2f5;
+}
+
+.icon {
+    width: 24px;
+    height: 24px;
+    stroke-width: 1.5;
+}
+
+.search-container {
+    padding: 7px 12px 10px 12px;
+    background-color: #f0f2f5;
+}
+
+.search-input {
+    width: 100%;
+    padding: 10px 16px 10px 60px;
+    background-color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    outline: none;
+    position: relative;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' fill='%23919191' viewBox='0 0 24 24'%3E%3Cpath d='m19 19-3.5-3.5'/%3E%3Ccircle cx='11' cy='11' r='8'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: 18px center;
+}
+
+.search-input:focus {
+    box-shadow: none;
+}
+
+.search-input::placeholder {
+    color: #8696a0;
+}
+
+.contacts-list {
+    flex: 1;
+    overflow-y: auto;
+    background-color: #fff;
+}
+
+.contacts-list::-webkit-scrollbar {
+    width: 6px;
+}
+
+.contacts-list::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.contacts-list::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 3px;
+}
+
+.no-chats {
+    padding: 80px 32px 32px;
+    text-align: center;
+    color: #6b7280;
+}
+
+.no-chats-emoji {
+    font-size: 64px;
+    margin-bottom: 16px;
+    opacity: 0.5;
+}
+
+.no-chats-title {
+    font-size: 20px;
+    margin-bottom: 8px;
+    color: #41525d;
+    font-weight: 300;
+}
+
+.no-chats-subtitle {
+    font-size: 14px;
+    color: #8696a0;
+    line-height: 1.4;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    padding: 12px 16px;
+    cursor: pointer;
+    transition: background-color 0.15s ease;
+    border-bottom: 1px solid #f0f2f5;
+    position: relative;
+}
+
+.contact-item:hover {
+    background-color: #f5f6f6;
+}
+
+.contact-item-selected {
+    background-color: #e7f3ff;
+}
+
+.contact-item-selected::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 3px;
+    background-color: #00a884;
+}
+
+.contact-info {
+    flex: 1;
+    min-width: 0;
+    margin-left: 15px;
+}
+
+.contact-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 2px;
+}
+
+.contact-name {
+    font-weight: 400;
+    color: #111827;
+    font-size: 17px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    flex: 1;
+    margin-right: 8px;
+}
+
+.contact-time {
+    font-size: 12px;
+    color: #8696a0;
+    flex-shrink: 0;
+    line-height: 1;
+}
+
+.contact-message-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 32px;
+    margin-left: -140px;
+}
+
+.contact-last-message {
+    font-size: 14px;
+    color: #8696a0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    flex: 1;
+    margin-right: 8px;
+    line-height: 1.2;
+}
+
+.unread-badge {
+    background-color: #25d366;
+    color: white;
+    font-size: 12px;
+    border-radius: 10px;
+    padding: 2px 6px;
+    font-weight: 600;
+    min-width: 20px;
+    text-align: center;
+    flex-shrink: 0;
+}
+
+/* resp */
+@media (max-width: 768px) {
+    .sidebar-header {
+        padding: 10px 16px;
+    }
+
+    .sidebar-title {
+        font-size: 19px;
+    }
+
+    .contact-item {
+        padding: 12px 16px;
+    }
+
+    .contact-name {
+        font-size: 16px;
+    }
+
+    .contact-last-message {
+        font-size: 13px;
+    }
+}
