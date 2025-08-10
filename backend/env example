@@ -1,0 +1,6 @@
+MONGO_URI=mongodb+srv://<username>:<password>@dev.jfpsta6.mongodb.net/whatsapp
+PORT=5000
+BOT_NUMBER=918329446654
+CLOUDINARY_CLOUD_NAME=don4gfc6v
+CLOUDINARY_API_KEY=628518356768198
+CLOUDINARY_API_SECRET=<your-secret>
