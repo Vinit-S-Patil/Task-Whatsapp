@@ -67,7 +67,7 @@ const messageSchema = new mongoose.Schema({
     }]
 }, {
     timestamps: true,
-    collection: "messages"
+    collection: "processed_messagess"
 });
 
 messageSchema.index({ wa_id: 1, timestamp: -1 });
