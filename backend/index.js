@@ -41,6 +41,9 @@ connectDB();
 
 app.use('/api', webhook_routes);
 app.use('/api', message_routes);
+app.get('/', (req, res) => {
+  res.send("Backend is running 🚀");
+});
 
 io.on('connection', (socket) => {
     console.log('Socket connected:', socket.id);
