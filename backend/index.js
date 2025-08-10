@@ -18,10 +18,23 @@ const io = new Server(server, {
         methods: ["GET", "POST"]
     }
 });
-
+const io = new Server(server, {
+    cors: {
+        origin: process.env.FRONTEND_ORIGIN || "*",
+        methods: ["GET", "POST"]
+    }
+});
 app.set('io', io);
 
-app.use(cors());
+// app.set('io', io);
+
+
+app.use(cors({
+    origin: process.env.FRONTEND_ORIGIN || "*"
+}));
+
+
+// app.use(cors());
 app.use(express.json());
 
 connectDB();
