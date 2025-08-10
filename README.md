@@ -2,7 +2,7 @@
 
 # 📱 WhatsApp Web Clone - RapidQuest Task
 
-A real-time chat application built using **MERN stack**, **Webhooks**, and **WebSockets**.  
+A real-time one way chat application built using **MERN stack**, **Webhooks**, and **WebSockets**.  
 Supports media attachments, emoji packs, contact search, and chat search — fully responsive.
 
 ---
