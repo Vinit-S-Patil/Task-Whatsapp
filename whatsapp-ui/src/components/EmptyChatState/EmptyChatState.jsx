@@ -4,6 +4,7 @@ const EmptyChatState = ({ isMobile }) => {
     return (
         <div className={`empty-chat-container ${isMobile ? 'mobile' : 'desktop'}`}>
             <div className="empty-chat-content">
+                <p className="no-chats-subtitle SB-temp">(Due to free version version of render the backend may take few minutes to load data)</p>
                 <div className="empty-chat-icon">
                     <svg viewBox="0 0 303 172" className="whatsapp-icon" xmlns="http://www.w3.org/2000/svg">
                         <path fill="currentColor" d="M87.8 139.5L96.7 130.4L80.4 114.6C73.4 107.6 73.4 96.6 80.4 89.6L96.7 73.8L87.8 64.7L66.2 86.3C55.4 97.1 55.4 114.1 66.2 124.9L87.8 139.5Z" />
