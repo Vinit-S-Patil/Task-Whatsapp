@@ -81,6 +81,7 @@ function Sidebar({
             <div className="contacts-list">
                 {filteredContacts.length === 0 ? (
                     <div className="no-chats">
+                        <p className="no-chats-subtitle SB-temp">(Due to free version version of render the backend may take few minutes to load data)</p>
                         <div className="no-chats-emoji">💬</div>
                         <p className="no-chats-title">No chats found</p>
                         <p className="no-chats-subtitle">Start a conversation or search for contacts</p>
